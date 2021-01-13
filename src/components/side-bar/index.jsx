@@ -12,10 +12,13 @@ const SideBar = () => {
             <Image src={banner} />
             <TextContainer>
                 <p>
-                    Se você chegou até aqui, é porquê nos interessamos pelo seu perfil. Agora, queremos ver um pouco mais dos seus conhecimentos técnicos.
+                    Se você chegou até aqui, é porquê nos interessamos pelo seu
+                    perfil. Agora, queremos ver um pouco mais dos seus
+                    conhecimentos técnicos.
                 </p>
                 <p>
-                    Mas fique tranquilo(a), para realizar os testes não é necessário conhecimento prévio em programação, tudo bem?
+                    Mas fique tranquilo(a), para realizar os testes não é
+                    necessário conhecimento prévio em programação, tudo bem?
                 </p>
             </TextContainer>
         </SideNav>
