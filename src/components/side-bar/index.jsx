@@ -60,6 +60,7 @@ const TitleContainer = styled.span`
     width: 50%;
     color: white;
     text-align: center;
+    font-size: 17px;
 
     h1 {
         font-size: 22px;
