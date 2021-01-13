@@ -5,10 +5,10 @@ import banner from '../../img/[LOGO].png'
 const SideBar = () => {
     return (
         <SideNav>
-            <TextContainer>
+            <TitleContainer>
                 <p>Bem-vindo(a) à plataforma de conteúdo da</p>
                 <h1>Kenzie Academy Brasil</h1>
-            </TextContainer>
+            </TitleContainer>
             <Image src={banner} />
             <TextContainer>
                 <p>
@@ -50,15 +50,20 @@ const Image = styled.img`
 const TextContainer = styled.span`
     width: 70%;
     color: white;
-    margin: 1.5rem;
+    margin: 2.5rem;
     paddin-top: 1.5rem;
     font-size: 17px;
     text-align: left;
+`
+
+const TitleContainer = styled.span`
+    width: 50%;
+    color: white;
+    text-align: center;
 
     h1 {
         font-size: 22px;
         color: white;
     }
 `
-
 
