@@ -1,10 +1,10 @@
-import IndexPage from './pages/index/'
+import AccessPage from './pages/access/'
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <IndexPage />
+      <AccessPage />
     </div>
   );
 }
