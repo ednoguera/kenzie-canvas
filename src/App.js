@@ -1,10 +1,10 @@
-import AccessPage from './pages/access/'
+import Routes from './routes/'
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <AccessPage />
+      <Routes />
     </div>
   );
 }

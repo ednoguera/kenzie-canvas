@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Form, Input, Button } from 'antd'
-import { Redirect } from 'react-router-dom'
+import { useHistory } from "react-router-dom"
 import styled from 'styled-components'
 
 
@@ -25,14 +25,24 @@ const ValidateLogin = () => {
     const [accessGranted, setAccessGranted] = useState()
     const accessKey = "pikachu"
     const label = "Chave de acesso"
+    const history = useHistory()
+
+
+    const handlerEvent = () => {
+        history.push('/modulos')
+    }
 
     const onFinish = (values) => {
+
         if (values.password === accessKey) {
             setAccessGranted(true)
+            localStorage.setItem("accessToken", "2fas1df23agfalkjsgd4f65")
+            history.push("/modulos")
         } else {
             setAccessGranted(false)
         }
         console.log('Success:', values);
+        console.log(history.location.pathname)
     };
 
     const onFinishFailed = (errorInfo) => {
@@ -63,7 +73,7 @@ const ValidateLogin = () => {
             </Form.Item>
 
             <Form.Item {...tailLayout}>
-                <StyledButton type="primary" htmlType="submit">
+                <StyledButton htmlType="submit">
                     Avançar
                 </StyledButton>
                 {accessGranted === true ? <h1>Acesso permitido!</h1> : accessGranted === false ? <h1>Acesso negado!</h1> : null}
