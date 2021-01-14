@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Form, Input, Button } from 'antd';
+import React, { useState, useEffect } from 'react'
+import { Form, Input, Button } from 'antd'
 import { Redirect } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -22,20 +22,22 @@ const tailLayout = {
 };
 
 const ValidateLogin = () => {
-    const [accessKey, setAccessKey] = useState("pikachu")
+    const [accessGranted, setAccessGranted] = useState()
+    const accessKey = "pikachu"
+    const label = "Chave de acesso"
 
     const onFinish = (values) => {
-        // if (accessKey == "pikachu") {
-
-        // }
+        if (values.password === accessKey) {
+            setAccessGranted(true)
+        } else {
+            setAccessGranted(false)
+        }
         console.log('Success:', values);
     };
 
     const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
     };
-
-    const label = "Chave de acesso"
 
     return (
         <FormContainer
@@ -53,7 +55,7 @@ const ValidateLogin = () => {
                 rules={[
                     {
                         required: true,
-                        message: 'Calma ai, você precisa da chave de acesso!',
+                        message: "Verifique a chave que enviamos para o seu email",
                     },
                 ]}
             >
@@ -64,6 +66,7 @@ const ValidateLogin = () => {
                 <StyledButton type="primary" htmlType="submit">
                     Avançar
                 </StyledButton>
+                {accessGranted === true ? <h1>Acesso permitido!</h1> : accessGranted === false ? <h1>Acesso negado!</h1> : null}
             </Form.Item>
         </FormContainer>
     );
