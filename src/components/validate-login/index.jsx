@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form, Input, Button } from 'antd';
+import { Redirect } from 'react-router-dom'
 import styled from 'styled-components'
+
 
 
 const layout = {
@@ -20,14 +22,20 @@ const tailLayout = {
 };
 
 const ValidateLogin = () => {
+    const [accessKey, setAccessKey] = useState("pikachu")
 
     const onFinish = (values) => {
+        // if (accessKey == "pikachu") {
+
+        // }
         console.log('Success:', values);
     };
 
     const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
     };
+
+    const label = "Chave de acesso"
 
     return (
         <FormContainer
@@ -39,10 +47,8 @@ const ValidateLogin = () => {
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
         >
-
-
             <Form.Item
-                label="Chave de acesso"
+                label={label}
                 name="password"
                 rules={[
                     {
@@ -51,7 +57,7 @@ const ValidateLogin = () => {
                     },
                 ]}
             >
-                <StyledInput />
+                <StyledInput placeholder="Digite aqui a chave que enviamos no seu e-mail" />
             </Form.Item>
 
             <Form.Item {...tailLayout}>
@@ -67,7 +73,7 @@ const ValidateLogin = () => {
 export default ValidateLogin
 
 const FormContainer = styled(Form)`
-    padding-top: 22%;
+    padding-top: 1%;
     padding-left: 10%;
 `
 

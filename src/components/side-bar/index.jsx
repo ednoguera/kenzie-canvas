@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import banner from '../../img/[LOGO].png'
+import banner from '../../assets/img/[LOGO].png'
 
 const SideBar = () => {
     return (
