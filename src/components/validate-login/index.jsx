@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Form, Input, Button } from 'antd'
-import { useHistory } from "react-router-dom"
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 
 
@@ -26,11 +26,6 @@ const ValidateLogin = () => {
     const accessKey = "pikachu"
     const label = "Chave de acesso"
     const history = useHistory()
-
-
-    const handlerEvent = () => {
-        history.push('/modulos')
-    }
 
     const onFinish = (values) => {
 
