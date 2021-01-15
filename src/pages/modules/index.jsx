@@ -1,8 +1,9 @@
 import React from 'react'
+import SideBarModules from '../../components/side-bar-modules/'
 
 const Modules = () => {
     return (
-        <h1>Módulos</h1>
+        <SideBarModules />
     )
 }
 
