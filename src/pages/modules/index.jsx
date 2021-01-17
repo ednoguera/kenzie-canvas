@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import SideBarModules from '../../components/side-bar_modules'
+import Header from '../../components/header_modules/'
 
 const Modules = () => {
+    const [menuModules, setMenuModules] = useState(false)
+    console.log("Estado do módulo:", menuModules)
+
     return (
-        <h1>Módulos</h1>
+        <>
+            <SideBarModules />
+            <Header setMenuModules={setMenuModules} menuModules={menuModules} />
+
+        </>
     )
 }
 
