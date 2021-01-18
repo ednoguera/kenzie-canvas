@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Menu } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import styled from 'styled-components'
 
 const { SubMenu } = Menu;
@@ -13,6 +12,8 @@ const Sider = (props) => {
 
     const onOpenChange = keys => {
         const latestOpenKey = keys.find(key => openKeys.indexOf(key) === -1);
+        console.log(keys)
+
         if (rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
             setOpenKeys(keys);
         } else {
@@ -20,9 +21,14 @@ const Sider = (props) => {
         }
     };
 
+    // const onClickList = (ref) => {
+    //     props.setSelectLesson(ref)
+    //     console.log(ref)
+    // }
+
     return (
         <StyledMenu mode="inline" openKeys={openKeys} onOpenChange={onOpenChange} >
-            <SubMenu key={props.mod} icon={<MailOutlined />} title={props.title}>
+            <SubMenu key={props.mod} title={props.title}>
                 {props.lessons.filter(module => module.mod === props.mod).map((data, key) => <MenuItem key={key}>{data.ref}</MenuItem>)}
             </SubMenu>
         </StyledMenu>

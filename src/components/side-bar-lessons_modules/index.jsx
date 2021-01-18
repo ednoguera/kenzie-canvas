@@ -4,7 +4,6 @@ import Sider from './drop-down-menu'
 import { lessons } from '../../helper/lesson_array'
 
 const SideBarLessons = () => {
-    const [accordionMenu, setAccordionMenu] = useState("1")
 
     return (
         <SideBar>
