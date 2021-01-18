@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import ContainerLessons from './container-lessons'
+import Sider from './drop-down-menu'
 import { lessons } from '../../helper/lesson_array'
 
 const SideBarLessons = () => {
+    const [accordionMenu, setAccordionMenu] = useState("1")
 
     return (
         <SideBar>
-            <ContainerLessons title="01" lessons={lessons} mod="1" />
-            <ContainerLessons title="02" lessons={lessons} mod="2" />
-            <ContainerLessons title="03" lessons={lessons} mod="3" />
-            <ContainerLessons title="04" lessons={lessons} mod="4" />
+            <Sider mod="1" lessons={lessons} title="Módulo 01" />
+            <Sider mod="2" lessons={lessons} title="Módulo 02" />
+            <Sider mod="3" lessons={lessons} title="Módulo 03" />
+            <Sider mod="4" lessons={lessons} title="Módulo 04" />
         </SideBar>
     )
 }
