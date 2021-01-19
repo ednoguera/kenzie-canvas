@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
+import { fetchContent } from '../../helper/fetch-content'
+import IframeRender from '../iframe-render_modules/'
 
 const Content = (props) => {
+    const [fetchedContent, setFetchedContent] = useState()
+    console.log("State content: ", fetchedContent)
+
+    const clickHandler = () => {
+        fetchContent("https://npepa32v9l.execute-api.us-east-1.amazonaws.com/v2/?project_id=19989138&filename=python/03_daypratice_data_structures.html&ref=master", setFetchedContent)
+    }
+
     return (
         <div>
             {props.lessons.filter(reference => reference.ref === props.selectLesson).map((content, key) => (
                 <>
-                    <h2 key={key}>{content.nome}</h2>
                     <div>
-                        <iframe src={content.video_url} width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                        <p><a href="https://vimeo.com/496843494">Nate Robinson: The Crossover (Squarespace)</a> from <a href="https://vimeo.com/passionparis">Passion Paris</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                        <IframeRender />
+                        <button onClick={clickHandler}>receber dados</button>
                     </div>
-                    <div>
-                        <p>
-                            {content.content}
-                        </p>
-                    </div>
+
                 </>
             ))}
         </div>
