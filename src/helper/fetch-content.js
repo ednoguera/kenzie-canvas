@@ -9,7 +9,8 @@ export const fetchContent = (url, setState) => {
             const parser = new DOMParser()
             const doc = parser.parseFromString(html, 'text/html')
 
-            console.log("conteúdo do html", document.body.innerHTML = doc)
+            console.log("conteúdo do html", doc)
+            console.dir(doc)
             setState(doc)
         })
 }
