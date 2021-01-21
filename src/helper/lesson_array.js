@@ -10,7 +10,7 @@ export const lessons = [
                 "module": "Fundamentos de programação com JavaScript",
                 "lessonName": "00 - Instruções para o curso",
                 "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/295",
-                "iframeUrl": "",
+                "iframeUrl": null,
                 "fileName": "l_00-instrucoes-para-o-curso"
             },
             {
