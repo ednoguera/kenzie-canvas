@@ -11,7 +11,7 @@ const rootSubmenuKeys = ['1', '2', '3', '4'];
 
 const Sider = (props) => {
     const [openKeys, setOpenKeys] = useState(['1']);
-    const [lessonsName, setLessonsList] = useState(
+    const [lessonsList, setLessonsList] = useState(
         props.lessons.filter(modules => modules.topicName[4] === props.mod)
     )
 
@@ -27,25 +27,13 @@ const Sider = (props) => {
         }
     };
 
-    const handlerClick = (setState, obj) => {
-        setState(obj)
-    }
-
-
     return (
         <StyledMenu mode="inline" openKeys={openKeys} onOpenChange={onOpenChange} >
-            {lessonsName.map(module => <SubMenu title={module.topicName}>
-                <SubMenu title="Lista de exercicios">
-                    {module.issuesList.map(issues =>
-                        <MenuItem onClick={handlerClick(props.setState, issues.lessonName)}>
-                            {issues.lessonName}
-                        </MenuItem>)}
-                </SubMenu>
-                {
-                    module.lessonsList.map(lesson => <MenuItem>{lesson.lessonName}</MenuItem>)
-                }
+            {lessonsList.map((moduleName, key) => <SubMenu key={key} title={moduleName.topicName}>
+                {moduleName.lessonsList.map(lessons => <MenuItem onClick={() => { props.setState(lessons.iframeUrl) }}>{lessons.lessonName}</MenuItem>)}
+                {moduleName.issuesList.map(issues => <MenuItem>{issues.lessonName}</MenuItem>)}
             </SubMenu>)}
-        </StyledMenu>
+        </StyledMenu >
     );
 };
 
