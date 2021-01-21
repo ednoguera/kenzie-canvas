@@ -4,7 +4,7 @@ import { MenuOutlined, CloseOutlined } from '@ant-design/icons'
 
 const Header = (props) => {
     const [buttonState, setButtonState] = useState(false)
-    console.log("Estado do menú hamburguer:", buttonState)
+    // console.log("Estado do menú hamburguer:", buttonState)
 
     const handlerClick = () => {
         setButtonState(!buttonState)
