@@ -31,7 +31,7 @@ const Sider = (props) => {
         <StyledMenu mode="inline" openKeys={openKeys} onOpenChange={onOpenChange} >
             {lessonsList.map((moduleName, key) => <SubMenu key={key} title={moduleName.topicName}>
                 {moduleName.lessonsList.map(lessons => <MenuItem onClick={() => { props.setState(lessons.iframeUrl) }}>{lessons.lessonName}</MenuItem>)}
-                {moduleName.issuesList.map(issues => <MenuItem>{issues.lessonName}</MenuItem>)}
+                {moduleName.issuesList.map(issues => <MenuItem onClick={() => { props.setState(issues.iframeUrl) }}>{issues.lessonName}</MenuItem>)}
             </SubMenu>)}
         </StyledMenu >
     );
