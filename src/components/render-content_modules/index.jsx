@@ -1,26 +1,17 @@
 import React, { useState } from 'react'
 import { fetchContent } from '../../helper/fetch-content'
 import IframeRender from '../iframe-render_modules/'
+import parse from 'html-react-parser'
+import { base_url } from '../../helper/url-content'
 
 const Content = (props) => {
-    const [fetchedContent, setFetchedContent] = useState()
-    console.log("State content: ", fetchedContent)
-
-    const clickHandler = () => {
-        fetchContent("https://npepa32v9l.execute-api.us-east-1.amazonaws.com/v2/?project_id=19989138&filename=python/03_daypratice_data_structures.html&ref=master", setFetchedContent)
-    }
+    const [fetchedContent, setFetchedContent] = useState(base_url)
 
     return (
         <div>
-            {props.lessons.filter(reference => reference.ref === props.selectLesson).map((content, key) => (
-                <>
-                    <div>
-                        <IframeRender />
-                        <button onClick={clickHandler}>receber dados</button>
-                    </div>
-
-                </>
-            ))}
+            <div>
+                {fetchedContent !== undefined ? <IframeRender src={props.selectLesson} /> : null}
+            </div>
         </div>
     )
 }

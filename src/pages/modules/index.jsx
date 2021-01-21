@@ -7,13 +7,14 @@ import { lessons } from '../../helper/lesson_array'
 
 const Modules = () => {
     const [menuModules, setMenuModules] = useState(false)
-    const [selectLesson, setSelectLesson] = useState("aula 01_lesson_1") //select first lesson by default
+    const [selectLesson, setSelectLesson] = useState() //select first lesson by default
+    console.log(selectLesson)
 
     return (
         <>
             <SideBarModules />
             <Header setMenuModules={setMenuModules} menuModules={menuModules} />
-            {menuModules === true ? <SideBarLessons /> : null}
+            {menuModules === true ? <SideBarLessons setState={setSelectLesson} /> : null}
             <Content lessons={lessons} selectLesson={selectLesson} />
         </>
     )

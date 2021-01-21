@@ -3,14 +3,19 @@ import styled from 'styled-components'
 import Sider from './drop-down-menu'
 import { lessons } from '../../helper/lesson_array'
 
-const SideBarLessons = () => {
+const SideBarLessons = (props) => {
 
     return (
         <SideBar>
-            <Sider mod="1" lessons={lessons} title="Módulo 01" />
-            <Sider mod="2" lessons={lessons} title="Módulo 02" />
-            <Sider mod="3" lessons={lessons} title="Módulo 03" />
-            <Sider mod="4" lessons={lessons} title="Módulo 04" />
+            <Sider mod="1" lessons={lessons} setState={props.setState} />
+            <Sider mod="2" lessons={lessons} setState={props.setState} />
+            <Sider mod="3" lessons={lessons} setState={props.setState} />
+            <Sider mod="4" lessons={lessons} setState={props.setState} />
+            <Sider mod="5" lessons={lessons} setState={props.setState} />
+            <Sider mod="6" lessons={lessons} setState={props.setState} />
+            <Sider mod="7" lessons={lessons} setState={props.setState} />
+            <Sider mod="8" lessons={lessons} setState={props.setState} />
+            <Sider mod="9" lessons={lessons} setState={props.setState} />
         </SideBar>
     )
 }
