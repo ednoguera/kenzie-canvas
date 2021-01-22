@@ -26,7 +26,7 @@ export default SideBarLessons
 const SideBar = styled.div`
     height: 90%; /* Full-height: remove this if you want "auto" height */
     width: 20%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    position: fixed;  /*Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 70px; /* Stay at the top */
     left: 8%;
