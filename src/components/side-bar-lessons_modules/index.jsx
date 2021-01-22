@@ -28,7 +28,7 @@ const SideBar = styled.div`
     width: 20%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 89.5px; /* Stay at the top */
+    top: 70px; /* Stay at the top */
     left: 8%;
     background-color: #f9f9f9; /* Light grey*/
     overflow-x: hidden; /* Disable horizontal scroll */

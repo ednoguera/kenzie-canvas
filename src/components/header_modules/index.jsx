@@ -22,7 +22,7 @@ const Header = (props) => {
                     </StyledButton>}
             </MenuContainer>
             <TitleContainer>
-                <h1>Módulos de Javascript</h1>
+                <h1>Semana do Zero ao JavaScript</h1>
             </TitleContainer>
         </StyledHeader>
     )
@@ -38,10 +38,14 @@ const StyledHeader = styled.header`
     z-index: 0;
     padding-left: 10%;
     width: 100%;
-    height: 90px;
+    height: 70px;
     border-bottom: 5px solid #5fdbfa;
     display: flex;
     align-items: center;
+
+    h1 {
+        font-weight: bold;
+    }
 `
 const StyledButton = styled.button`
     border-style: none;
