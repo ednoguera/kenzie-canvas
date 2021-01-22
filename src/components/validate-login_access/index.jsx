@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Form, Input, Button } from 'antd'
+import { Form } from 'antd'
 import { useHistory } from 'react-router-dom'
-import styled from 'styled-components'
+import { FormContainer, StyledButton, StyledInput } from '../../style/styled-components'
 
 
 
@@ -68,22 +68,4 @@ const ValidateLogin = (props) => {
 
 
 export default ValidateLogin
-
-const FormContainer = styled(Form)`
-    padding-top: 1%;
-    padding-left: 10%;
-`
-
-const StyledButton = styled(Button)`
-    background-color: #714191;
-    width: 30%;
-    height: 50px;
-    border-radius: 10px;
-    font-weight: bold;
-`
-
-const StyledInput = styled(Input.Password)`
-    height: 50px;
-    border-radius: 10px;
-`
 
