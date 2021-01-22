@@ -158,13 +158,9 @@ const CloseButton = styled(CloseOutlined)`
 const StyledIframe = styled.iframe`
     width: 100%;
     margin: 0rem auto;
-    padding: 0 10% 0 30%;
+    padding: 0 10% 10% 30%;
     border: none;
-    height: 1536px;
-
-    h2 {
-        color: red;
-    }
+    height: 100vh;
 `
 
 const IframeTitle = styled.div`
@@ -222,11 +218,35 @@ const SideBarLessonsMenu = styled.div`
     left: 8%;
     background-color: #f9f9f9; /* Light grey*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    padding: 10px 0 50px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+`
+
+const SiderLivesContainer = styled.div`
+    width: 85%;
+    background-color: #0479fb;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 0 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px grey;
+
+    h2 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #0159b7;
+        box-shadow: 0 0 15px #5fdbfa;
+
+        h2 {
+            text-shadow: 0 0 5px #fff;
+        }
+    }
 `
 
 
@@ -255,5 +275,6 @@ export {
     ImageSideBarModules,
     StyledSideMenu,
     MenuItem,
-    SideBarLessonsMenu
+    SideBarLessonsMenu,
+    SiderLivesContainer
 }

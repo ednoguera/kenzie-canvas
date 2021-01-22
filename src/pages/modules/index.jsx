@@ -6,6 +6,7 @@ import Content from '../../components/render-content_modules/'
 import { lessons } from '../../helper/lesson_array'
 import Instructions from '../../components/00-first-lesson_modules/'
 import styled from 'styled-components'
+import Lives from '../../components/render-lives_modules/'
 
 const Modules = (props) => {
     const [menuModules, setMenuModules] = useState(false)
@@ -13,13 +14,18 @@ const Modules = (props) => {
     const [lessonTitle, setLessonTitle] = useState("Aula 1")
     console.log(menuModules)
 
+    const renderLives = () => {
+        setSelectLesson("lives")
+        console.log(selectLesson)
+    }
+
     return (
         <div >
             <SideBarModules />
             <Header setMenuModules={setMenuModules} menuModules={menuModules} />
             <PageContainer>
-                {menuModules === true ? <SideBarLessons setState={setSelectLesson} setLessonTitle={setLessonTitle} /> : null}
-                {selectLesson === null ? <Instructions /> : <Content lessons={lessons} selectLesson={selectLesson} title={lessonTitle} />}
+                {menuModules === true ? <SideBarLessons setState={setSelectLesson} setLessonTitle={setLessonTitle} renderLives={renderLives} /> : null}
+                {selectLesson === null ? <Instructions /> : selectLesson === "lives" ? <Lives /> : <Content lessons={lessons} selectLesson={selectLesson} title={lessonTitle} />}
             </PageContainer>
         </div>
     )
