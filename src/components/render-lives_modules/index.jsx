@@ -4,7 +4,9 @@ import styled from 'styled-components'
 const Lives = () => {
     return (
         <PageLivesContainer>
-            <div>TÍTULO</div>
+            <LivesTitle>
+                <h2>Título</h2>
+            </LivesTitle>
             <GroupLivesContainer>
                 <div>Dia 26</div>
                 <div>
@@ -80,8 +82,23 @@ export default Lives
 const PageLivesContainer = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    padding: 0 0 0 5%;
+`
+
+const LivesTitle = styled.div`
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
 `
 
 const GroupLivesContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    margin: 0rem auto;
+
+    div {
+        margin: 1rem;
+    }
 `
