@@ -1,7 +1,7 @@
 export const lessons = [
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 1 - JavaScript Básico, Variáveis e Comparando Variáveis",
+        "topicName": "MÓDULO A - JavaScript Básico, Variáveis e Comparando Variáveis",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/231",
         "iframeUrl": "",
         "fileName": "l_dia-1-javascript-basico-variaveis-e-comparando-variaveis",
@@ -131,7 +131,7 @@ export const lessons = [
     },
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 2 - Trabalhando com decisões lógicas",
+        "topicName": "MÓDULO B - Trabalhando com decisões lógicas",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/247",
         "iframeUrl": "",
         "fileName": "l_dia-2-trabalhando-com-decisoes-logicas",
@@ -184,7 +184,7 @@ export const lessons = [
     },
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 3 - Arrays",
+        "topicName": "MÓDULO C - Arrays",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/254",
         "iframeUrl": "",
         "fileName": "l_dia-3-arrays",
@@ -266,7 +266,7 @@ export const lessons = [
 
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 4 - Loops",
+        "topicName": "MÓDULO D - Loops",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/265",
         "iframeUrl": "",
         "fileName": "l_dia-4-loops",
@@ -319,7 +319,7 @@ export const lessons = [
     },
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 5 - Loops - continuação",
+        "topicName": "MÓDULO E - Loops - continuação",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/272",
         "iframeUrl": "",
         "fileName": "l_dia-5-loops-continuacao",
@@ -358,7 +358,7 @@ export const lessons = [
     },
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 6 - Funções",
+        "topicName": "MÓDULO F - Funções",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/276",
         "iframeUrl": "",
         "fileName": "l_dia-6-funcoes",
@@ -405,7 +405,7 @@ export const lessons = [
 
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 7 - Fazendo Loops em Arrays",
+        "topicName": "MÓDULO G - Fazendo Loops em Arrays",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/282",
         "iframeUrl": "",
         "fileName": "l_dia-7-fazendo-loops-em-arrays",
@@ -437,7 +437,7 @@ export const lessons = [
     },
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "DIA 8 - Conclusão",
+        "topicName": "MÓDULO H - Conclusão",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/286",
         "iframeUrl": "",
         "fileName": "l_dia-8-conclusao",
@@ -476,7 +476,7 @@ export const lessons = [
     },
     {
         "module": "Fundamentos de programação com JavaScript",
-        "topicName": "Dia 9",
+        "topicName": "MÓDULO I - Entrega Final",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/293",
         "iframeUrl": "",
         "fileName": "l_dia-9",
