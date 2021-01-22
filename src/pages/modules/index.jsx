@@ -6,7 +6,7 @@ import Content from '../../components/render-content_modules/'
 import { lessons } from '../../helper/lesson_array'
 import Instructions from '../../components/00-first-lesson_modules/'
 
-const Modules = () => {
+const Modules = (props) => {
     const [menuModules, setMenuModules] = useState(false)
     const [selectLesson, setSelectLesson] = useState(null) //select first lesson by default
     const [lessonTitle, setLessonTitle] = useState("Aula 1")
