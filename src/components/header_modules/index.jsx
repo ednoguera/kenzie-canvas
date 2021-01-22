@@ -32,7 +32,10 @@ export default Header
 
 const StyledHeader = styled.header`
     background-color: #f9f9f9;
-    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 0;
     padding-left: 10%;
     width: 100%;
     height: 90px;

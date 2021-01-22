@@ -21,24 +21,13 @@ const tailLayout = {
     },
 };
 
-const ValidateLogin = () => {
+const ValidateLogin = (props) => {
     const [accessGranted, setAccessGranted] = useState()
     const [accessKey, setAccessKey] = useState("pikachu")
     const label = "Chave de acesso"
     const history = useHistory()
 
-    const onFinish = (values) => {
 
-        if (values.password === accessKey) {
-            setAccessGranted(true)
-            localStorage.setItem("accessToken", "2fas1df23agfalkjsgd4f65")
-            history.push("/modulos")
-        } else {
-            setAccessGranted(false)
-        }
-        console.log('Success:', values);
-        console.log(history.location.pathname)
-    };
 
     const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
@@ -51,7 +40,7 @@ const ValidateLogin = () => {
             initialValues={{
                 remember: true,
             }}
-            onFinish={onFinish}
+            onFinish={props.onFinish}
             onFinishFailed={onFinishFailed}
         >
             <Form.Item
