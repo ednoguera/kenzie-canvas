@@ -7,15 +7,15 @@ const SideBarLessons = (props) => {
 
     return (
         <SideBar>
-            <Sider mod="1" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="2" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="3" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="4" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="5" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="6" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="7" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="8" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
-            <Sider mod="9" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="A" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="B" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="C" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="D" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="E" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="F" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="G" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="H" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
+            <Sider mod="I" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
         </SideBar>
     )
 }
