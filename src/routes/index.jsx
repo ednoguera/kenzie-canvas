@@ -16,7 +16,8 @@ const Routes = () => {
                 {token === null ? <AccesPage /> : <Redirect to='modulos' />}
             </Route>
             <Route exact path="/modulos">
-                {token === null ? <Redirect to="/acesso" /> : <Modules />}
+                <Modules />
+                {/* {token === null ? <Redirect to="/acesso" /> : <Modules />} */}
             </Route>
         </Switch>
     )
