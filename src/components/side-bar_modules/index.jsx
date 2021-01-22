@@ -1,8 +1,13 @@
 import React from 'react'
+import { Redirect, useHistory } from 'react-router-dom'
 import banner from '../../assets/logo-kenzie/logo-kenzie-05.png'
 import styled from 'styled-components'
 
-const SideBarModules = () => {
+const SideBarModules = (props) => {
+    const history = useHistory()
+
+
+
     return (
         <SideNav>
             <Image src={banner} />
@@ -22,11 +27,20 @@ const SideNav = styled.div`
     left: 0;
     background-color: #05143c; /* Blue */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    padding: 20px 0 20px 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+`
+
+const Button = styled.button`
+    background-color: #f9f9f9;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
 `
 
 const Image = styled.img`
