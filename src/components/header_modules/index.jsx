@@ -35,7 +35,7 @@ const StyledHeader = styled.header`
     z-index: 1;
     padding-left: 10%;
     width: 100%;
-    height: 125px;
+    height: 90px;
     border-bottom: 5px solid #5fdbfa;
     display: flex;
     align-items: center;
@@ -57,8 +57,10 @@ const MenuContainer = styled.div`
 const TitleContainer = styled.div`
     margin: 1rem;
     color: #05143c;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
     padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
 `
 
 const CloseButton = styled(CloseOutlined)`
