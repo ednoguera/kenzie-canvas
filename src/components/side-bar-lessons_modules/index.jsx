@@ -7,6 +7,7 @@ const SideBarLessons = (props) => {
 
     return (
         <SideBar>
+            <Sider mod="Õ" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
             <Sider mod="A" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
             <Sider mod="B" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />
             <Sider mod="C" lessons={lessons} setState={props.setState} setLessonTitle={props.setLessonTitle} />

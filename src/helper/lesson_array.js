@@ -1,18 +1,29 @@
 export const lessons = [
     {
         "module": "Fundamentos de programação com JavaScript",
+        "topicName": "INSTRUÇÕES PARA O CURSO",
+        "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/295",
+        "iframeUrl": "",
+        "fileName": "l_00-instrucoes-para-o-curso",
+        "lessonsList": [
+            {
+                "module": "Fundamentos de programação com JavaScript",
+                "lessonName": "00 - Introdução ao curso",
+                "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/232",
+                "iframeUrl": null,
+                "fileName": ""
+            }
+        ],
+        "issuesList": []
+    },
+    ,
+    {
+        "module": "Fundamentos de programação com JavaScript",
         "topicName": "MÓDULO A - JavaScript Básico, Variáveis e Comparando Variáveis",
         "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/231",
         "iframeUrl": "",
         "fileName": "l_dia-1-javascript-basico-variaveis-e-comparando-variaveis",
         "lessonsList": [
-            {
-                "module": "Fundamentos de programação com JavaScript",
-                "lessonName": "00 - Instruções para o curso",
-                "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/295",
-                "iframeUrl": null,
-                "fileName": "l_00-instrucoes-para-o-curso"
-            },
             {
                 "module": "Fundamentos de programação com JavaScript",
                 "lessonName": "01 - Vídeo: Introdução à Programação",
