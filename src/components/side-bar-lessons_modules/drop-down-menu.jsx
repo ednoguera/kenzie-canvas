@@ -12,7 +12,7 @@ const rootSubmenuKeys = ['1', '2', '3', '4'];
 const Sider = (props) => {
     const [openKeys, setOpenKeys] = useState(['1']);
     const [lessonsList, setLessonsList] = useState(
-        props.lessons.filter(modules => modules.topicName[4] === props.mod)
+        props.lessons.filter(modules => modules.topicName[7] === props.mod)
     )
 
 
