@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Lives = () => {
     return (
         <PageLivesContainer>
+            <div>TÍTULO</div>
             <GroupLivesContainer>
                 <div>Dia 26</div>
                 <div>
@@ -83,5 +84,4 @@ const PageLivesContainer = styled.div`
 
 const GroupLivesContainer = styled.div`
     display: flex;
-    flex-wrap: wrap;
 `
