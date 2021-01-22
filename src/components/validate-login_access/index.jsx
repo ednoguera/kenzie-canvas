@@ -23,7 +23,7 @@ const tailLayout = {
 
 const ValidateLogin = () => {
     const [accessGranted, setAccessGranted] = useState()
-    const accessKey = "pikachu"
+    const [accessKey, setAccessKey] = useState("pikachu")
     const label = "Chave de acesso"
     const history = useHistory()
 
