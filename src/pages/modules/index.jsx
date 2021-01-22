@@ -28,8 +28,5 @@ const Modules = (props) => {
 export default Modules
 
 const PageContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;    
+       
 `
