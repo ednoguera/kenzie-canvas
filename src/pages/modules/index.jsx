@@ -5,6 +5,7 @@ import SideBarLessons from '../../components/side-bar-lessons_modules/'
 import Content from '../../components/render-content_modules/'
 import { lessons } from '../../helper/lesson_array'
 import Instructions from '../../components/00-first-lesson_modules/'
+import styled from 'styled-components'
 
 const Modules = (props) => {
     const [menuModules, setMenuModules] = useState(false)
@@ -16,10 +17,19 @@ const Modules = (props) => {
         <div >
             <SideBarModules />
             <Header setMenuModules={setMenuModules} menuModules={menuModules} />
-            {menuModules === true ? <SideBarLessons setState={setSelectLesson} setLessonTitle={setLessonTitle} /> : null}
-            {selectLesson === null ? <Instructions /> : <Content lessons={lessons} selectLesson={selectLesson} title={lessonTitle} />}
+            <PageContainer>
+                {menuModules === true ? <SideBarLessons setState={setSelectLesson} setLessonTitle={setLessonTitle} /> : null}
+                {selectLesson === null ? <Instructions /> : <Content lessons={lessons} selectLesson={selectLesson} title={lessonTitle} />}
+            </PageContainer>
         </div>
     )
 }
 
 export default Modules
+
+const PageContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;    
+`
