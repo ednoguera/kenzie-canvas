@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { fetchContent } from '../../helper/fetch-content'
 import IframeRender from '../iframe-render_modules/'
 import { base_url } from '../../helper/url-content'
 
