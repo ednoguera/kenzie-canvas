@@ -1,5 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import { PageContainer, HeaderContainer, Img } from '../../style/styled-components'
+
+//IMAGES IN THIS PAGE
 import codeWars1 from '../../assets/img/codewars.png'
 import codeWars2 from '../../assets/img/codewars-2.png'
 import devSkiller from '../../assets/img/devskiller.png'
@@ -7,6 +9,8 @@ import exercicios from '../../assets/img/exercicio.png'
 import codeWarsList from '../../assets/img/codewars-list.png'
 import duvidas from '../../assets/img/duvidas.png'
 import entregas from '../../assets/img/entregas.png'
+
+
 
 const Instructions = () => {
     return (
@@ -116,40 +120,3 @@ const Instructions = () => {
 
 export default Instructions
 
-const PageContainer = styled.div`
-    width: 70%;
-    margin: 2rem auto;
-    text-align: left;
-    padding: 0 5% 5% 15%;
-
-    h2 {
-        font-size: 32px;
-        font-weight: bold;
-    }
-
-    h3 {
-        font-size: 22px;
-        font-weight: bold;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    figure {
-        display: flex;
-        justify-content: center;
-    }
-`
-
-const HeaderContainer = styled.div`
-    h2 {
-        font-size: 26px;
-        font-weith: bold;
-    }
-`
-
-const Img = styled.img`
-    width: 90%;
-    height: 80%;
-`
