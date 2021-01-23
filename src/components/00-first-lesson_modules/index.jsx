@@ -78,9 +78,15 @@ const Instructions = () => {
                 <p>&nbsp;</p>
                 <p>Em cada módulo você terá acesso a uma página onde você deve assistir ao vídeo com as aulas e logo abaixo terá a transcrição do texto da aula, caso deseje ler ou relembrar depois.&nbsp;</p>
 
+
+
+
                 <p>Alguns vídeos estão em inglês. Porém não se preocupe, caso não domine a língua. Você pode ativar as legendas clicando icone CC na barra de ferramentas do vídeo. Caso tenha dúvidas, segue link explicativo sobre a ativação das legendas: <a href="https://vimeo.zendesk.com/hc/pt/articles/224968828-Closed-Captions-CC-e-Legendas" class="external" target="_blank" rel="noreferrer noopener">
                     <span>https://vimeo.zendesk.com/hc/pt/articles/224968828-Closed-Captions-CC-e-Legendas</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links para um site externo."></span><span class="screenreader-only">&nbsp;(Links para um site externo.)</span></a></p>
                 <p>&nbsp;</p>
+
+                <iframe src="//player.vimeo.com/video/76979871?title=0&amp;byline=0&amp;portrait=0" width="600" height="338" frameborder="0" allowfullscreen=""></iframe>
+
                 <p>Após assistir aos vídeos, você deve praticar!! E praticar muito! Para isso preparamos vários exercícios para que execute o conceito que acabou de aprender:</p>
             </div>
             <figure>
