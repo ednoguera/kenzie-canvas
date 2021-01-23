@@ -34,5 +34,22 @@ const Modules = (props) => {
 export default Modules
 
 const PageContainer = styled.div`
-       
+      ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f9f9f9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 5px gray;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #5fdbfa;
+        box-shadow: 0 0 0px 5px #e6f7fe;
+    } 
 `

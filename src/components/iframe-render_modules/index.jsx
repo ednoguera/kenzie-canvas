@@ -7,7 +7,8 @@ const IframeRender = (props) => {
             <IframeTitle>
                 <h3>{props.title}</h3>
             </IframeTitle>
-            <StyledIframe src={props.src} allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" />
+            <StyledIframe src={props.src} allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"
+            />
         </p>
     )
 }

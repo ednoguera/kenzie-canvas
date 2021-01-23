@@ -161,6 +161,10 @@ const StyledIframe = styled.iframe`
     padding: 0 10% 10% 30%;
     border: none;
     height: 100vh;
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
 `
 
 const IframeTitle = styled.div`
@@ -203,6 +207,8 @@ const StyledSideMenu = styled(Menu)`
     border: none;
     font-size: 16px;
     font-weight: bold;
+
+    
 `
 
 const MenuItem = styled(Menu.Item)`
@@ -223,6 +229,25 @@ const SideBarLessonsMenu = styled.div`
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f9f9f9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#0479fb, #5fdbfa);
+        border-radius: 20px;
+        box-shadow: 0 0 20px 5px gray;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #5fdbfa;
+        box-shadow: 0 0 0px 5px #e6f7fe;
+    }
 `
 
 const SiderLivesContainer = styled.div`
