@@ -497,7 +497,7 @@ export const lessons = [
                 "module": "Fundamentos de programação com JavaScript",
                 "lessonName": "51 - Entrega - Mostre seu conhecimento - Final",
                 "lessonUrl": "https://experiencia.kenzie.com.br/courses/5/modules/items/291",
-                "iframeUrl": "https://npepa32v9l.execute-api.us-east-1.amazonaws.com/v2/?project_id=22216166&filename=canvas_instructions.md&ref=master",
+                "iframeUrl": "https://npepa32v9l.execute-api.us-east-1.amazonaws.com/v2/?project_id=22216166&filename=canvas_instructions_v1.md&ref=master",
                 "fileName": ""
             }
         ]
