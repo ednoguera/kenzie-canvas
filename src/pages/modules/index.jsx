@@ -7,6 +7,7 @@ import { lessons } from '../../helper/lesson_array'
 import Instructions from '../../components/00-first-lesson_modules/'
 import styled from 'styled-components'
 import Lives from '../../components/render-lives_modules/'
+import { useWindowSize } from '../../helper/window-size-hook'
 
 const Modules = (props) => {
     const [menuModules, setMenuModules] = useState(true)
@@ -18,6 +19,12 @@ const Modules = (props) => {
         localStorage.getItem("storedTitle") === null ? "Aula 1" : localStorage.getItem("storedTitle")
     )
 
+    const { width } = useWindowSize()
+
+    console.log(width)
+    console.log(menuModules)
+
+
     const renderLives = () => {
         setSelectLesson("lives")
     }
@@ -27,9 +34,12 @@ const Modules = (props) => {
             <SideBarModules />
             <Header setMenuModules={setMenuModules} menuModules={menuModules} />
             <PageContainer>
-                {menuModules === true ? <SideBarLessons setState={setSelectLesson} setLessonTitle={setLessonTitle} renderLives={renderLives} /> : null}
+                {menuModules === true ? <SideBarLessons setState={setSelectLesson} setLessonTitle={setLessonTitle} renderLives={renderLives} setMenuModules={setMenuModules} width={width} /> : null}
                 {selectLesson === null ? <Instructions /> : selectLesson === "lives" ? <Lives /> : <Content lessons={lessons} selectLesson={selectLesson} title={lessonTitle} />}
             </PageContainer>
+
+
+
         </div>
     )
 }
