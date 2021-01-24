@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyledIframe, IframeTitle } from '../../style/styled-components'
+import { useWindowSize } from '../../helper/window-size-hook'
 
 const IframeRender = (props) => {
     return (

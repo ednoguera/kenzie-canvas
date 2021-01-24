@@ -1,11 +1,11 @@
 import React from 'react'
 import { PageContainer, HeaderContainer, Img } from '../../style/styled-components'
+import { useWindowSize } from '../../helper/window-size-hook'
 
 //IMAGES IN THIS PAGE
 import codeWars1 from '../../assets/img/codewars.png'
-import codeWars2 from '../../assets/img/codewars-2.png'
-import devSkiller from '../../assets/img/devskiller.png'
-import exercicios from '../../assets/img/exercicio.png'
+import returnKata from '../../assets/img/return-kata.png'
+import listaCodewars from '../../assets/img/lista-codewars.png'
 import codeWarsList from '../../assets/img/codewars-list.png'
 import duvidas from '../../assets/img/duvidas.png'
 import entregas from '../../assets/img/entregas.png'
@@ -13,6 +13,15 @@ import entregas from '../../assets/img/entregas.png'
 
 
 const Instructions = () => {
+    const { width } = useWindowSize()
+    console.log(width)
+
+    const responsiveSrc = () => {
+        if (width >= 320 && width <= 1024) {
+            return 320
+        }
+    }
+
     return (
         <PageContainer>
             <HeaderContainer>
@@ -29,7 +38,7 @@ const Instructions = () => {
                 <li>
                     <strong>Slack (slack.com):</strong> O slack é uma das principais ferramentas de comunidade do mercado. E é por lá que você conseguirá interagir com outros usuários, se comunicar com o time de ensino da Kenzie e principalmente tirar todas as dúvidas que surgirem com nosso time de suporte!</li>
             </ul>
-            <p>Não está na comunidade do Experiência Kenzie ainda? Entre agora mesmo através do link: <a href="https://join.slack.com/t/experienciakenzie/shared_invite/zt-j1wh9ho6-3ojdK0frsafrRtPzfC81hg" class="external" target="_blank" rel="noreferrer noopener"><span>https://join.slack.com/t/experienciakenzie/shared_invite/zt-j1wh9ho6-3ojdK0frsafrRtPzfC81hg</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links para um site externo."></span><span class="screenreader-only">&nbsp;(Links para um site externo.)</span></a></p>
+            <p>Não está na comunidade do Experiência Kenzie ainda? Entre agora mesmo através do link: <a href="https://join.slack.com/t/experienciakenzie/shared_invite/zt-j1wh9ho6-3ojdK0frsafrRtPzfC81hg" class="external" target="_blank" rel="noreferrer noopener"><span>Junte-se a nossa comunidade no Slack</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links para um site externo."></span><span class="screenreader-only">&nbsp;</span></a></p>
             <p>&nbsp;</p>
             <ul>
                 <li><strong>Codewars (codewars.com):&nbsp;</strong></li>
@@ -38,7 +47,7 @@ const Instructions = () => {
             <p>Aqui é onde você executará grande parte dos exercícios e práticas do curso.&nbsp; Para utiliza-la basta acessar o site e criar uma conta clicando em SignUp. Você será redirecionado para esta tela:</p>
 
             <figure>
-                <Img src={codeWars1} alt="Captura de Tela 2020-11-13 às 11.13.19.png" width="1332" height="788" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/125" data-api-returntype="File" ></Img>
+                <Img src={codeWars1} alt="Captura de Tela 2020-11-13 às 11.13.19.png" width={width} height="788" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/125" data-api-returntype="File" ></Img>
             </figure>
 
             <div>
@@ -46,45 +55,45 @@ const Instructions = () => {
             </div>
 
             <figure>
-                <Img src={codeWars2} alt="Captura de Tela 2020-11-13 às 11.13.41.png" width="1334" height="778" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/124" data-api-returntype="File" ></Img>
+                <Img src={returnKata} alt="Captura de Tela 2020-11-13 às 11.13.41.png" width={width} height="778" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/124" data-api-returntype="File" ></Img>
             </figure>
 
             <div>
                 <p>Após isso é só criar seu nome de usuário e pronto. Já conseguirá acessar todos os exercícios!</p>
-                <ul>
-                    <li><strong>Devskiller</strong></li>
-                </ul>
-                <p>Com está ferramenta você será capaz de realizar os 2 desafios que deve entregar durante o curso. Para ter acesso ao Devskiller você receberá um convite por e-mail. É só aceitar o convite que já terá acesso para fazer o teste. Muito importante verificar sua caixa de SPAM e outras abas de caixa de entrada regularmente.</p>
-            </div>
 
-            <figure>
-                <img src={devSkiller} alt="Captura de Tela 2020-11-13 às 11.24.44.png" width="537" height="398" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/123" data-api-returntype="File"></img>
-            </figure>
+            </div>
 
             <div>
                 <h3>O Curso</h3>
                 <p>O curso de Introdução a Programação com Javascript está estruturado em 8 módulos. Cada módulo é identificado como 1 dia de estudo. Sugerimos para que cumpra todos o conteúdo e realize todas as atividades que estude entre 4 a 6 horas por dia.</p>
                 <p>Os módulos que serão mostrados no curso são:</p>
                 <ul>
-                    <li>DIA 1 - JavaScript Básico, Variáveis e Comparando Variáveis</li>
-                    <li>DIA 2 - Trabalhando com decisões lógicas</li>
-                    <li>DIA 3 - Arrays</li>
-                    <li>DIA 4 - Loops</li>
-                    <li>DIA 5 - Loops - continuação</li>
-                    <li>DIA 6 - Funções</li>
-                    <li>DIA 7 - Fazendo Loops em Arrays</li>
-                    <li>DIA 8 - Conclusão</li>
+                    <li>MÓDULO A - JavaScript Básico, Variáveis e Comparando Variáveis</li>
+                    <li>MÓDULO B - Trabalhando com decisões lógicas</li>
+                    <li>MÓDULO C - Arrays</li>
+                    <li>MÓDULO D - Loops</li>
+                    <li>MÓDULO E - Loops - continuação</li>
+                    <li>MÓDULO F - Funções</li>
+                    <li>MÓDULO G - Fazendo Loops em Arrays</li>
+                    <li>MÓDULO H - Conclusão</li>
+                    <li>MÓDULO I - Entrega final</li>
                 </ul>
                 <p>&nbsp;</p>
                 <p>Em cada módulo você terá acesso a uma página onde você deve assistir ao vídeo com as aulas e logo abaixo terá a transcrição do texto da aula, caso deseje ler ou relembrar depois.&nbsp;</p>
 
+
+
+
                 <p>Alguns vídeos estão em inglês. Porém não se preocupe, caso não domine a língua. Você pode ativar as legendas clicando icone CC na barra de ferramentas do vídeo. Caso tenha dúvidas, segue link explicativo sobre a ativação das legendas: <a href="https://vimeo.zendesk.com/hc/pt/articles/224968828-Closed-Captions-CC-e-Legendas" class="external" target="_blank" rel="noreferrer noopener">
-                    <span>https://vimeo.zendesk.com/hc/pt/articles/224968828-Closed-Captions-CC-e-Legendas</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links para um site externo."></span><span class="screenreader-only">&nbsp;(Links para um site externo.)</span></a></p>
+                    <span>Como ativar as legendas</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links para um site externo."></span><span class="screenreader-only">&nbsp;</span></a></p>
                 <p>&nbsp;</p>
+
+                <iframe src="//player.vimeo.com/video/76979871?title=0&amp;byline=0&amp;portrait=0" width={responsiveSrc} height="338" frameborder="0" allowfullscreen=""></iframe>
+
                 <p>Após assistir aos vídeos, você deve praticar!! E praticar muito! Para isso preparamos vários exercícios para que execute o conceito que acabou de aprender:</p>
             </div>
             <figure>
-                <Img src={exercicios} alt="Captura de Tela 2020-11-13 às 11.27.24.png" width="1376" height="274" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/122" data-api-returntype="File"></Img>
+                <Img src={listaCodewars} alt="Captura de Tela 2020-11-13 às 11.27.24.png" width={responsiveSrc} height="274" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/122" data-api-returntype="File"></Img>
             </figure>
             <div>
                 <p>Os exercícios estão na ferramenta do Codewars, e você poderá executar os código diretamente pelo navegador, sem necessitar instalar nada no seu computador.</p>
@@ -97,7 +106,7 @@ const Instructions = () => {
                 <p>Caso apresente algum erro nos testes, revise seu código e tente novamente. Se não conseguir evoluir, é só entrar na comunidade do Slack e colocar seu dúvida ou dificuldade no canal de suporte daquele módulo. Que em minutos alguém irá te ajudar!</p>
 
                 <figure>
-                    <img src={duvidas} alt="Captura de Tela 2020-11-13 às 11.34.38.png" width="308" height="198" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/121" data-api-returntype="File" />
+                    <img src={duvidas} alt="Captura de Tela 2020-11-13 às 11.34.38.png" width="320" height="70" data-api-endpoint="https://experiencia.kenzie.com.br/api/v1/courses/5/files/121" data-api-returntype="File" />
                 </figure>
             </div>
             <div>
