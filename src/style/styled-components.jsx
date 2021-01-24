@@ -165,6 +165,11 @@ const StyledIframe = styled.iframe`
     ::-webkit-scrollbar {
         width: 8px;
     }
+
+    /*RESPONSIVE*/
+    @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+    }
 `
 
 const IframeTitle = styled.div`
@@ -194,6 +199,11 @@ const SideNavModules = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    /*RESPONSIVE*/
+    @media (min-width: 320px) and (max-width: 1024px) {
+        display: none;
+    }
 `
 
 const ImageSideBarModules = styled.img`
@@ -206,9 +216,7 @@ const StyledSideMenu = styled(Menu)`
     background-color: #f9f9f9;
     border: none;
     font-size: 16px;
-    font-weight: bold;
-
-    
+    font-weight: bold;    
 `
 
 const MenuItem = styled(Menu.Item)`
@@ -247,6 +255,14 @@ const SideBarLessonsMenu = styled.div`
     ::-webkit-scrollbar-thumb:hover {
         background: #5fdbfa;
         box-shadow: 0 0 0px 5px #e6f7fe;
+    }
+
+    /*RESPONSIVE*/
+    @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 0 0 0 0;
+        left: 0;
+        top: 70px;
     }
 `
 

@@ -24,6 +24,12 @@ const Sider = (props) => {
         }
     };
 
+    const responsiveMenu = () => {
+        if (props.width < 1024) {
+            props.setMenuModules(false)
+        }
+    }
+
     return (
         <StyledSideMenu mode="inline" openKeys={openKeys} onOpenChange={onOpenChange} >
             {lessonsList.map((moduleName, key) => <SubMenu key={key} title={moduleName.topicName}>
@@ -33,7 +39,8 @@ const Sider = (props) => {
                         props.setState(lessons.iframeUrl);
                         props.setLessonTitle(lessons.lessonName);
                         localStorage.setItem("storedLesson", lessons.iframeUrl);
-                        localStorage.setItem("storedTitle", lessons.lessonName)
+                        localStorage.setItem("storedTitle", lessons.lessonName);
+                        responsiveMenu()
                     }}>
                         {lessons.lessonName}
                     </MenuItem>)}
@@ -43,7 +50,8 @@ const Sider = (props) => {
                         props.setState(issues.iframeUrl);
                         props.setLessonTitle(issues.lessonName);
                         localStorage.setItem("storedLesson", issues.iframeUrl);
-                        localStorage.setItem("storedTitle", issues.lessonName)
+                        localStorage.setItem("storedTitle", issues.lessonName);
+                        responsiveMenu()
                     }}>
                         {issues.lessonName}
                     </MenuItem>)}
