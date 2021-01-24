@@ -10,8 +10,15 @@ import Lives from '../../components/render-lives_modules/'
 
 const Modules = (props) => {
     const [menuModules, setMenuModules] = useState(false)
-    const [selectLesson, setSelectLesson] = useState(null) //select first lesson by default
-    const [lessonTitle, setLessonTitle] = useState("Aula 1")
+    // const [selectLesson, setSelectLesson] = useState(null) //select first lesson by default
+    // const [lessonTitle, setLessonTitle] = useState("Aula 1")
+    const [selectLesson, setSelectLesson] = useState(
+        localStorage.getItem("storedLesson") === "null" ? null : localStorage.getItem("storedLesson")
+    ) //select first lesson by default
+
+    const [lessonTitle, setLessonTitle] = useState(
+        localStorage.getItem("storedTitle") === null ? "Aula 1" : localStorage.getItem("storedTitle")
+    )
     console.log(menuModules)
 
     const renderLives = () => {
