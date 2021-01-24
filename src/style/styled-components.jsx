@@ -5,10 +5,21 @@ import styled from 'styled-components'
 const Image = styled.img`
     height: 32vmin;
     pointer-events: none;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        height: 50vmin;
+        padding-left: 10px;
+    }
 `
 
 const Figure = styled.figure`
     padding: 12% 0 0 40%;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        height: 50vmin;
+        padding-left: 10px;
+        padding-top: 40%;
+    }
 `
 
 const SideNav = styled.div`
@@ -25,11 +36,30 @@ const SideNav = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    /*RESPONSIVE*/
+    @media (min-width: 320px) and (max-width: 1024px) {
+        width: 80%;
+        height: 100vh;
+        z-index: -1; 
+
+        p {
+            font-size: 16px;
+            text-align: left;
+        }
+        
+        
+    }
 `
 
 const ImageSide = styled.img`
     height: 25vmin;
     pointer-events: none;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        filter: blur(10px);     
+    }
+
 
 `
 
@@ -40,6 +70,10 @@ const TextContainer = styled.span`
     paddin-top: 1.5rem;
     font-size: 17px;
     text-align: left;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        filter: blur(10px);     
+    }
 `
 
 const TitleContainer = styled.span`
@@ -52,11 +86,21 @@ const TitleContainer = styled.span`
         font-size: 22px;
         color: white;
     }
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        filter: blur(10px);     
+    }
 `
 
 const FormContainer = styled(Form)`
     padding-top: 1%;
-    padding-left: 10%;
+    padding-left: 5%;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+       width: 95%;
+       padding-top: 40%;
+       padding-left: 5%;    
+    }
 `
 
 const StyledButton = styled(Button)`
@@ -65,11 +109,21 @@ const StyledButton = styled(Button)`
     height: 50px;
     border-radius: 10px;
     font-weight: bold;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+       left: 0px;
+       width: 30%;     
+    }
 `
 
 const StyledInput = styled(Input.Password)`
     height: 50px;
     border-radius: 10px;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+       left: 0px;
+       width: 95%;     
+    }
 `
 
 const PageContainer = styled.div`
@@ -96,12 +150,40 @@ const PageContainer = styled.div`
         display: flex;
         justify-content: center;
     }
+
+    /*RESPONSIVE*/
+    @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+        margin: 2rem auto;
+        text-align: left;
+        padding: 0 5% 5% 5%;
+        
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+    
 `
 
 const HeaderContainer = styled.div`
     h2 {
         font-size: 26px;
         font-weith: bold;
+    }
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+       h2 {
+            font-size: 18px;
+            font-weith: bold;
+        }
     }
 `
 
@@ -126,15 +208,31 @@ const StyledHeader = styled.header`
     h1 {
         font-weight: bold;
     }
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        height: 100px;
+        background-color: #05143c;
+
+
+    }
 `
 const StyledMenuButton = styled.button`
     border-style: none;
-    background-color: rgba(255, 0, 0, 0);;
+    background-color: rgba(255, 0, 0, 0);
+    
+    @media (min-width: 320px) and (max-width: 1024px) {
+        padding-left: 0px;
+    }
 `
 
 const Hamburguer = styled(MenuOutlined)`
     font-size: 30px;
     color: #05143c;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        color: #fff;
+        font-size: 26px;
+    }
 `
 
 const MenuContainer = styled.div`
@@ -148,11 +246,25 @@ const HeaderTitleContainer = styled.div`
     font-weight: bold;
     padding-top: 15px;
     font-family: 'Montserrat', sans-serif;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        
+        h1 {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
 `
 
 const CloseButton = styled(CloseOutlined)`
     font-size: 30px;
     color: #05143c;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+    }
 `
 
 const StyledIframe = styled.iframe`
@@ -183,6 +295,18 @@ const IframeTitle = styled.div`
         font-weight: bold;
         text-align: center;
     }
+
+    /*RESPONSIVE*/
+    @media (min-width: 320px) and (max-width: 1024px) {
+        padding-left: 15%;
+
+        h3 {
+            font-size: 26px;
+            text-align: left;
+        }
+
+    }
+    
 `
 
 const SideNavModules = styled.div`
@@ -262,7 +386,7 @@ const SideBarLessonsMenu = styled.div`
         width: 100%;
         padding: 0 0 0 0;
         left: 0;
-        top: 70px;
+        top: 100px;
     }
 `
 

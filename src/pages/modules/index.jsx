@@ -37,9 +37,6 @@ const Modules = (props) => {
                 {menuModules === true ? <SideBarLessons setState={setSelectLesson} setLessonTitle={setLessonTitle} renderLives={renderLives} setMenuModules={setMenuModules} width={width} /> : null}
                 {selectLesson === null ? <Instructions /> : selectLesson === "lives" ? <Lives /> : <Content lessons={lessons} selectLesson={selectLesson} title={lessonTitle} />}
             </PageContainer>
-
-
-
         </div>
     )
 }

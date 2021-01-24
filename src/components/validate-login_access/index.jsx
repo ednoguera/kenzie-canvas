@@ -68,4 +68,3 @@ const ValidateLogin = (props) => {
 
 
 export default ValidateLogin
-

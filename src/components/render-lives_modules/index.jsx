@@ -1,8 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import { lives } from '../../helper/lives'
+import { useWindowSize } from '../../helper/window-size-hook'
 
 const Lives = () => {
+    const { width } = useWindowSize()
+
+    const setSize = () => {
+        if (width >= 320 && width <= 1024) {
+            return "320"
+        } else {
+            return "560"
+        }
+    }
+
     return (
         <div>
             <LivesTitle>
@@ -132,6 +143,16 @@ const PageLivesContainer = styled.div`
     margin: 0% 10% 0 30%;
     display: flex;
     flex-wrap: wrap;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+        margin: 2rem auto;
+        text-align: left;
+        padding: 0 5% 5% 5%;
+        display: flex;
+        flex-direction: column;
+        
+    }
 `
 
 const LivesTitle = styled.div`
@@ -143,6 +164,17 @@ const LivesTitle = styled.div`
         font-size: 36px;
         font-weight: bold;
     }
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+        margin: 2rem auto;
+        text-align: left;
+        padding: 0 5% 5% 5%;
+        
+        h2 {
+            font-size: 18px;
+        }
+    }
 `
 
 const GroupLivesContainer = styled.div`
@@ -153,6 +185,15 @@ const GroupLivesContainer = styled.div`
 
     div {
         margin: 0.5rem auto;
+    }
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+        width: 100%;
+        margin: 2rem auto;
+        text-align: left;
+        padding: 0 5% 5% 5%;
+        display: flex;
+        flex-direction: column;
     }
 
 `
