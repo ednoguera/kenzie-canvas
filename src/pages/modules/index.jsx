@@ -21,9 +21,6 @@ const Modules = (props) => {
 
     const { width } = useWindowSize()
 
-    console.log(width)
-    console.log(menuModules)
-
 
     const renderLives = () => {
         setSelectLesson("lives")

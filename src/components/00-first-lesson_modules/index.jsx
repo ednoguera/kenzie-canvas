@@ -14,7 +14,6 @@ import entregas from '../../assets/img/entregas.png'
 
 const Instructions = () => {
     const { width } = useWindowSize()
-    console.log(width)
 
     const responsiveSrc = () => {
         if (width >= 320 && width <= 1024) {

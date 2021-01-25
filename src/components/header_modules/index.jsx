@@ -21,10 +21,9 @@ const Header = (props) => {
         <StyledHeader>
             <MenuContainer>
                 {buttonState === false ? <StyledMenuButton onClick={handlerClick} setMenuModules={props.setMenuModules} menuModules={props.menuModules} >
-                    <CloseButton />
-
+                    <Hamburguer />
                 </StyledMenuButton> : <StyledMenuButton onClick={handlerClick} setMenuModules={props.setMenuModules} menuModules={props.menuModules} >
-                        <Hamburguer />
+                        <CloseButton />
                     </StyledMenuButton>}
             </MenuContainer>
             <HeaderTitleContainer>
