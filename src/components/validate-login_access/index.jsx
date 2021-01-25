@@ -4,27 +4,10 @@ import { useHistory } from 'react-router-dom'
 import { FormContainer, StyledButton, StyledInput } from '../../style/styled-components'
 
 
-
-const layout = {
-    labelCol: {
-        span: 13,
-    },
-    wrapperCol: {
-        span: 6,
-    },
-};
-
-const tailLayout = {
-    wrapperCol: {
-        offset: 8,
-        span: 16,
-    },
-};
-
 const ValidateLogin = (props) => {
     const [accessGranted, setAccessGranted] = useState()
     const [accessKey, setAccessKey] = useState("pikachu")
-    const label = "Chave de acesso"
+    const label = ""
     const history = useHistory()
 
 
@@ -35,7 +18,7 @@ const ValidateLogin = (props) => {
 
     return (
         <FormContainer
-            {...layout}
+            // {...layout}
             name="basic"
             initialValues={{
                 remember: true,
@@ -53,10 +36,11 @@ const ValidateLogin = (props) => {
                     },
                 ]}
             >
-                <StyledInput placeholder="Digite aqui a chave que enviamos no seu e-mail" />
+                <p>Chave de acesso</p>
+                <StyledInput placeholder="A chave de acesso que enviamos!" />
             </Form.Item>
 
-            <Form.Item {...tailLayout}>
+            <Form.Item >
                 <StyledButton htmlType="submit">
                     Avançar
                 </StyledButton>
