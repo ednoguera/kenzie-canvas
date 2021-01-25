@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.02c91707.chunk.css",
+    "main.js": "/static/js/main.4b77cef0.chunk.js",
+    "main.js.map": "/static/js/main.4b77cef0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4038544b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4038544b.js.map",
+    "static/css/2.b544de60.chunk.css": "/static/css/2.b544de60.chunk.css",
+    "static/js/2.5e87df90.chunk.js": "/static/js/2.5e87df90.chunk.js",
+    "static/js/2.5e87df90.chunk.js.map": "/static/js/2.5e87df90.chunk.js.map",
+    "static/js/3.9158cd17.chunk.js": "/static/js/3.9158cd17.chunk.js",
+    "static/js/3.9158cd17.chunk.js.map": "/static/js/3.9158cd17.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.b544de60.chunk.css.map": "/static/css/2.b544de60.chunk.css.map",
+    "static/css/main.02c91707.chunk.css.map": "/static/css/main.02c91707.chunk.css.map",
+    "static/js/2.5e87df90.chunk.js.LICENSE.txt": "/static/js/2.5e87df90.chunk.js.LICENSE.txt",
+    "static/media/[LOGO].694c7744.png": "/static/media/[LOGO].694c7744.png",
+    "static/media/codewars-list.fb042dcc.png": "/static/media/codewars-list.fb042dcc.png",
+    "static/media/codewars.c32a1e7a.png": "/static/media/codewars.c32a1e7a.png",
+    "static/media/entregas.d1ef30ce.png": "/static/media/entregas.d1ef30ce.png",
+    "static/media/lista-codewars.9f45fb6b.png": "/static/media/lista-codewars.9f45fb6b.png",
+    "static/media/logo-kenzie-01.ef6992ba.png": "/static/media/logo-kenzie-01.ef6992ba.png",
+    "static/media/logo-kenzie-03.a9d13c97.png": "/static/media/logo-kenzie-03.a9d13c97.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4038544b.js",
+    "static/css/2.b544de60.chunk.css",
+    "static/js/2.5e87df90.chunk.js",
+    "static/css/main.02c91707.chunk.css",
+    "static/js/main.4b77cef0.chunk.js"
+  ]
+}
