@@ -26,6 +26,7 @@ const ValidateLogin = (props) => {
             onFinish={props.onFinish}
             onFinishFailed={onFinishFailed}
         >
+            <p>Chave de acesso</p>
             <Form.Item
                 label={label}
                 name="password"
@@ -36,7 +37,7 @@ const ValidateLogin = (props) => {
                     },
                 ]}
             >
-                <p>Chave de acesso</p>
+
                 <StyledInput placeholder="A chave de acesso que enviamos!" />
             </Form.Item>
 
