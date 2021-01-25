@@ -17,7 +17,7 @@ const Figure = styled.figure`
 
     @media (min-width: 320px) and (max-width: 1024px) {
         height: 50vmin;
-        padding-left: 10px;
+        padding-left: 0px;
         padding-top: 40%;
     }
 `
@@ -39,7 +39,7 @@ const SideNav = styled.div`
 
     /*RESPONSIVE*/
     @media (min-width: 320px) and (max-width: 1024px) {
-        width: 80%;
+        width: 100%;
         height: 100vh;
         z-index: -1; 
 
@@ -57,7 +57,7 @@ const ImageSide = styled.img`
     pointer-events: none;
 
     @media (min-width: 320px) and (max-width: 1024px) {
-        filter: blur(10px);     
+        filter: blur(40px);     
     }
 
 
@@ -72,7 +72,7 @@ const TextContainer = styled.span`
     text-align: left;
 
     @media (min-width: 320px) and (max-width: 1024px) {
-        filter: blur(10px);     
+        filter: blur(20px);     
     }
 `
 
@@ -88,18 +88,29 @@ const TitleContainer = styled.span`
     }
 
     @media (min-width: 320px) and (max-width: 1024px) {
-        filter: blur(10px);     
+        filter: blur(20px);     
     }
 `
 
 const FormContainer = styled(Form)`
-    padding-top: 1%;
-    padding-left: 5%;
+    padding: 0 0 0 40%;
+
+    p {
+        text-align: left;
+        font-weight: bold;
+        padding-left: 35%;
+    }
 
     @media (min-width: 320px) and (max-width: 1024px) {
        width: 95%;
        padding-top: 40%;
-       padding-left: 5%;    
+       padding-left: 5%;
+       
+       p {
+           font-size: 18px;
+           font-weight: bold;
+           color: #fff;
+       }
     }
 `
 
@@ -111,18 +122,19 @@ const StyledButton = styled(Button)`
     font-weight: bold;
 
     @media (min-width: 320px) and (max-width: 1024px) {
-       left: 0px;
-       width: 30%;     
+       width: 80%;
+       color: #fff;
     }
 `
 
 const StyledInput = styled(Input.Password)`
+    width: 30%;
     height: 50px;
     border-radius: 10px;
 
     @media (min-width: 320px) and (max-width: 1024px) {
        left: 0px;
-       width: 95%;     
+       width: 80%;     
     }
 `
 
